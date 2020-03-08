@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="cat" class="com.zyq.pojo.Cat"></bean>
+    <bean id="dog111" class="com.zyq.pojo.Dog"></bean>
+
+    <!--
+    byName: 会自动在容器上下文中查找, 和自己对象set方法后面值对应的beanid
+    byType: 会自动在容器上下文中查找, 和自己对象属性类型相同的bean, 必须保证类型全局唯一
+    -->
+    <bean id="people" class="com.zyq.pojo.People" autowire="byType">
+        <property name="name" value="zyq"></property>
+    </bean>
+</beans>
