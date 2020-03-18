@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iframe</title>
+    <script>
+        function go() {
+          var innerText = document.getElementById("url").value;
+          document.getElementById("iframe").src=innerText;
+        }
+    </script>
+</head>
+<body>
+<div>
+    <p>请输入地址</p>
+    <p>
+        <input type="text" id="url">
+        <input type="button" value="提交" onclick="go()">
+    </p>
+</div>
+<div>
+    <iframe style="height: 500px; width: 100%;" id="iframe"></iframe>
+</div>
+</body>
+</html>

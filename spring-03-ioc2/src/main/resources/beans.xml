@@ -5,17 +5,17 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <!--    下标赋值-->
-<!--    <bean id="user" class="com.zyq.pojo.User">-->
+<!--    <bean id="user" class="com.zyq.pojo.Books">-->
 <!--        <constructor-arg index="0" value="zyq"></constructor-arg>-->
 <!--    </bean>-->
 
 <!--    类型赋值 不建议使用-->
-<!--    <bean id="user" class="com.zyq.pojo.User">-->
+<!--    <bean id="user" class="com.zyq.pojo.Books">-->
 <!--        <constructor-arg type="java.lang.String" value="zzz"></constructor-arg>-->
 <!--    </bean>-->
 
 <!--    参数名赋值-->
-    <bean id="user" class="com.zyq.pojo.User">
+    <bean id="user" class="com.zyq.pojo.Books">
         <constructor-arg name="name" value="yqq"></constructor-arg>
     </bean>
 
